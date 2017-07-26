@@ -3,7 +3,8 @@ CC=g++
 CFLAGS=-c -Wall
 LDFLAGS=
 
-SOURCES = src/main.cpp
+SOURCES = src/main.cpp \
+					src/iosystem.cpp 
 
 
 SRCDIR := src

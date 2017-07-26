@@ -6,8 +6,8 @@
 
 
 
-//int Boom(int a);
-//int WriteBase();
-//int ReadBase();
+int Boom(int a);
+int WriteBase();
+int ReadBase();
 
 #endif

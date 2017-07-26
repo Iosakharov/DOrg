@@ -1,26 +1,29 @@
 #include "iosystem.h"
 
-int iosystem::WriteBase()
+int Boom(int a)
 {
-	fileOut << "I'll gave you a Po-po-po-po-POWER!!" << endl;
+	std::cout << "Baaada Boom " << a << std::endl;
+	return 0;
+}
+
+int WriteBase()
+{
+	std::ofstream fileOut("base/base.dorg");
+	fileOut << "I'll gave you a Po-po-po-po-POWER!!" << std::endl;
 
 	fileOut.close();
 	return 0;
 }
 
-int iosystem::Boom(int a)
+int ReadBase()
 {
-	std::cout << "Baaada Boom " << a << endl;
-}
-
-int iosystem::ReadBase()
-{
+	std::ifstream fileIn("base/base.dorg");
 	char listen[50];
 	fileIn >> listen;
-	std::cout << listen << endl;
+	std::cout << listen;
 
 	fileIn.getline(listen,50);
-	std::cout << listen << endl;
+	std::cout << listen << std::endl;
 
 	fileIn.close();
 	return 0;
