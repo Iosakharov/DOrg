@@ -6,8 +6,19 @@
 
 
 
-int Boom(int a);
-int WriteBase();
-int ReadBase();
+class Iosystem
+{
+public:
+	std::ofstream fileOut;
+	std::ifstream fileIn;
+	Iosystem (void);
+	~Iosystem (void);
+	int Boom(int a);
+	int ClearBase();
+	int WriteBase();
+	int WriteBase(const char*);
+	int ReadBase();
+
+};
 
 #endif

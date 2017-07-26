@@ -1,10 +1,11 @@
 TARGET=DOrg
 CC=g++
-CFLAGS=-c -Wall
+CFLAGS=-c -std=c++11 -Wall
 LDFLAGS=
 
 SOURCES = src/main.cpp \
-					src/iosystem.cpp 
+					src/iosystem.cpp \
+					src/projectlist.cpp 
 
 
 SRCDIR := src
